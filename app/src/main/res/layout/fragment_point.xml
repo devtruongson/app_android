@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ng_y_b_t_u"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/startDatePoint"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/startDatePoint"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="@string/ng_y_b_t_u_dd_mm_yyyy"
+        android:inputType="date"
+        android:textColor="#181C1F"
+        android:textColorHint="#A4ABB2"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/dpStartDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvStartDate"
+        tools:ignore="Autofill" />
+
+    <ImageButton
+        android:id="@+id/dpStartDate"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_calendar"
+        app:layout_constraintBottom_toBottomOf="@id/startDatePoint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/startDatePoint"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/gi_b_t_u"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/startDatePoint"
+        app:layout_constraintTop_toBottomOf="@id/startDatePoint" />
+
+    <EditText
+        android:id="@+id/startTimePoint"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="@string/gi_b_t_u_hh_mm_ss"
+        android:inputType="time"
+        android:textColor="#181C1F"
+        android:textColorHint="#A4ABB2"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/tpStartTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvStartTime"
+        tools:ignore="Autofill" />
+
+    <ImageButton
+        android:id="@+id/tpStartTime"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_clock_nav"
+        app:layout_constraintBottom_toBottomOf="@id/startTimePoint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/startTimePoint"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvDateDiff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/ng_y_ch_nh_l_ch"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/startDatePoint"
+        app:layout_constraintTop_toBottomOf="@id/startTimePoint" />
+
+    <EditText
+        android:id="@+id/daysOffset"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="@string/s_ng_y_ch_nh_l_ch"
+        android:inputType="number"
+        android:textColor="#181C1F"
+        android:textColorHint="#A4ABB2"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDateDiff"
+        tools:ignore="Autofill" />
+
+    <TextView
+        android:id="@+id/tvTimeDiff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/th_i_gian_ch_nh_l_ch"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/startDatePoint"
+        app:layout_constraintTop_toBottomOf="@id/daysOffset" />
+
+    <EditText
+        android:id="@+id/timeOffset"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="@string/s_gi_ph_t_gi_y_ch_nh_l_ch"
+        android:inputType="time"
+        android:textColor="#181C1F"
+        android:textColorHint="#A4ABB2"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/endTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTimeDiff"
+        tools:ignore="Autofill" />
+
+    <ImageButton
+        android:id="@+id/endTime"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_calendar"
+        app:layout_constraintBottom_toBottomOf="@id/timeOffset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/timeOffset"
+        tools:ignore="ContentDescription" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timeOffset">
+
+        <RadioButton
+            android:id="@+id/radioBefore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tr_c" />
+
+        <RadioButton
+            android:id="@+id/radioAfter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sau" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/calculatePoint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_bg_btn_cal"
+        android:text="@string/t_nh_th_i_i_m"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup" />
+
+    <TextView
+        android:id="@+id/resultPoint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="@string/k_t_qu"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calculatePoint" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

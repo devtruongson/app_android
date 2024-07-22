@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Time Calculator</string>
+    <string name="diff">Tính chênh lệch</string>
+    <string name="point">Tính thời điểm</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ng_y_b_t_u_dd_mm_yyyy">Ngày bắt đầu (DD/MM/YYYY)</string>
+    <string name="gi_b_t_u_hh_mm_ss">Giờ bắt đầu (HH:MM:SS)</string>
+    <string name="ng_y_k_t_th_c_dd_mm_yyyy">Ngày kết thúc (DD/MM/YYYY)</string>
+    <string name="gi_k_t_th_c_hh_mm_ss">Giờ kết thúc (HH:MM:SS)</string>
+    <string name="t_nh_ch_nh_l_ch">Tính Chênh Lệch</string>
+    <string name="k_t_qu">Kết quả</string>
+    <string name="t_nh_th_i_i_m">Tính Thời Điểm</string>
+    <string name="s_ng_y_ch_nh_l_ch">Số ngày chênh lệch</string>
+    <string name="s_gi_ph_t_gi_y_ch_nh_l_ch">Số giờ, phút, giây chênh lệch</string>
+    <string name="tr_c">Trước</string>
+    <string name="sau">Sau</string>
+    <string name="ng_y_b_t_u">Ngày Bắt Đầu</string>
+    <string name="gi_b_t_u">Giờ Bắt Đầu</string>
+    <string name="ng_y_ch_nh_l_ch">Ngày Chênh Lệch</string>
+    <string name="th_i_gian_ch_nh_l_ch">Thời Gian Chênh Lệch</string>
+    <string name="ng_y_k_t_th_c">Ngày Kết Thúc</string>
+    <string name="gi_k_t_th_c">Giờ Kết Thúc</string>
+    <string name="o_th_i_gian">Đo Thời Gian</string>
+    <string name="start">Bắt Đầu</string>
+    <string name="stop">Dừng</string>
+    <string name="reset">Reset</string>
+    <string name="_00_00_00">00:00:00</string>
+</resources>
